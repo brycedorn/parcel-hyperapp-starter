@@ -1,0 +1,41 @@
+{
+  "name": "parcel-hyperapp-starter",
+  "version": "1.0.0",
+  "description": "A starting point for tiny projects",
+  "main": "index.js",
+  "scripts": {
+    "start": "./node_modules/.bin/parcel src/index.html --out-dir=public",
+    "build": "rimraf public && ./node_modules/.bin/parcel build src/index.html --out-dir=public",
+    "lint": "prettier --write ./src/**/*.js",
+    "clean": "rimraf .cache node_modules && npm i"
+  },
+  "keywords": [
+    "fx",
+    "hyperapp",
+    "parcel",
+    "picostyle",
+    "prettier"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/brycedorn/parcel-hyperapp-starter"
+  },
+  "author": {
+    "name": "Bryce Dorn",
+    "email": "brycedorn@gmail.com",
+    "url": "http://www.bryce.io"
+  },
+  "license": {
+    "type": "MIT",
+    "url": "http://www.mit-license.org"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@hyperapp/fx": "^0.7.0",
+    "hyperapp": "^1.2.6",
+    "parcel-bundler": "^1.9.0",
+    "picostyle": "^2.0.1",
+    "prettier": "^1.13.5",
+    "rimraf": "^2.6.2"
+  }
+}
